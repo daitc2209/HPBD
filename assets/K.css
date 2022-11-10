@@ -449,7 +449,7 @@ html{
 /* Modal */
 .modal{
     position: fixed;
-    top: 0;
+    top: 46px;
     right: 0;
     left: 0;
     bottom: 0;
@@ -457,7 +457,9 @@ html{
     align-items: center;    /*căn giữa theo chiều cao*/
     justify-content: center;    /*căn giữa theo chiều rộng*/
     display: none;
+    /* display: block; */
 }
+
 
 .modal.open{
     display: flex;
@@ -474,12 +476,26 @@ html{
 
 .modal-header{
     background: #009688;
-    height: 130px;
+    height: 200px;
+    max-height: calc(100%-32px);
+    display: flex;
+    
+}
+
+.modal__place-img{
+    height: 100%;
+    /* width: 300px; */
+    background: cover;
+    margin-right: 200px;
+}
+
+.modal-nameUser{
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
     color: #fff;
+
 }
 
 .modal-heading-icon{
@@ -504,19 +520,18 @@ html{
     padding: 16px;
 }
 
-.modal-label{
-    display: block;
-    font-size: 15px;
-    margin-bottom: 12px;
+.modal-body__contain{
+    display: flex;
 }
 
-.modal-input{
-    border: 1px solid #ccc;
-    width: 100%;
-    padding: 10px;
-    font-size: 15px;
-    margin-bottom: 24px;
+.modal-img{
+    height: 100px;
+    width: 100px;
+    background: cover;
+    margin-right: 20px;
+    margin-bottom: 8px;
 }
+
 
 #buy-tickets{
     background: #009688;
