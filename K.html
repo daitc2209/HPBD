@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web giới thiệu 1 người bình thường và 3 thằng đần</title>
+    <!-- thay biểu tượng trang web  -->
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LoL_icon.svg/1200px-LoL_icon.svg.png"
+        type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/K.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <!-- Begin: Nav -->
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#slider">Full tướng</a></li>
+                <li><a href="#tour">Tiêu điểm tướng</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#">
+                        More
+                        <i class="nav-arrow-down ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- End: Nav -->
+
+            <!-- Mobile menu button -->
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+
+            <!-- Begin: Search -->
+            <div class="search-btn">
+                <img src="./imgs/TCD.jpg" alt="" class="user-img">
+                <!-- <i class="search-icon ti-search"></i> -->
+            </div>
+
+            <!-- End: Search -->
+
+        </div>
+
+        <!-- Music -->
+        <div class="player">
+            <!-- Dashboard -->
+            <div class="dashboard">
+                <!-- Header -->
+                <!-- <div style="display: flex; justify-content: center;">
+
+                    <i class="fas fa-list"></i>
+                    <header >
+                       
+                        
+                        <h4>Now playing:</h4>
+                        <h2>String 57th & 9th</h2>
+                    </header>
+                </div> -->
+
+                <div style="display: flex; align-items: center;
+                justify-content: space-between;">
+                    <div class="btn-list" style="color: #666; padding: 4px; font-size: 24px;">
+                        <i class="fas fa-list" style="cursor: pointer;"></i>
+                    </div>
+                    <h4>Now playing:</h4>
+                    <span class="fav">
+                        <i class="fas fa-heart heart-icon"></i>
+                        <i class="fas fa-heart heart-icon-red"></i>
+                    </span>
+                    <!-- <span class="tooltip tooltip-fav">
+                        Add Favourite
+                    </span> -->
+                </div>
+
+                <!-- CD -->
+                <div class="cd">
+                    <div class="cd-thumb">
+                    </div>
+                </div>
+                <header>                     
+                    <h2>String 57th & 9th</h2>
+                    <p style="font-size: 16px;">Author</p>
+                </header>
+
+                <!-- Control -->
+                <div class="control">
+                    
+                    <div class="btn1 btn-repeat">
+                        <i class="fas fa-redo"></i>
+
+                    </div>
+                    <div class="btn1 btn-prev">
+                        <i class="fas fa-step-backward"></i>
+                    </div>
+                    <div class="btn1 btn-toggle-play">
+                        <i class="fas fa-pause icon-pause"></i>
+                        <i class="fas fa-play icon-play"></i>
+                    </div>
+                    <div class="btn1 btn-next">
+                        <i class="fas fa-step-forward"></i>
+                    </div>
+                    <div class="btn1 btn-random">
+                        <i class="fas fa-random"></i>
+                    </div>
+                </div>
+
+                <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+
+                <audio id="audio" src=""></audio>
+            </div>
+
+            <!-- Playlist -->
+            <div class="playlist__container">
+                <div class="playlist__whole">
+                    <header class="playlist__header">
+                        <h3>My playlist</h3>
+                        <span class="close-list">
+                            <i class="fas fa-cloud-sun"></i>
+                        </span>
+                    </header>
+                    <ul class="playlist">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider -->
+        <div id="slider">
+            <div class="text-content">
+                <h2 class="text-heading">Team Đụt</h2>
+                <div class="text-descripstion">We are one family</div>
+            </div>
+
+            <div class="slideshow-container">
+                <div class="mySlides1">
+                  <img src="./assets/img/loser.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides1">
+                  <img src="./assets/img/loser.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides1">
+                  <img src="./assets/img/loser.jpg" style="width:100%">
+                </div>
+              
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+              </div>
+        </div>
+
+        <div id="content">
+            <div id="content" class="content-section">
+                <!-- About Section -->
+                <div class="section-heading">HAPPY BIRTHDAY </div>
+                <div class="section-sub-heading">Hai thằng cháu sinh tháng 11</div>
+                <p class="about-text"></p>
+
+                <div class="row member-list">
+                    <div class="col col-two s-col-full mt-32 text-center">
+                        <div class="member-name">Nguyễn Đức Khải</div>
+                        <img src="./imgs/2bocon.jpg" alt="Name" class="member-img">
+                    </div>
+
+                    <div class="col col-two s-col-full mt-32 text-center">
+                        <div class="member-name">Nguyễn Nhật Minh</div>
+                        <img src="./imgs/Kngu7.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <!-- Tour Section -->
+            <div id="tour" class="tour-section">
+                <div class="content-section">
+                    <h2 class="section-heading text-white">TIÊU ĐIỂM TƯỚNG</h2>
+                    <p class="section-sub-heading text-white"></p>
+
+                    <ul class="tickets-list">
+                        <li>September <span class="sold-out">Sold out</span></li>
+                        <li>October <span class="sold-out">Sold out</span></li>
+                        <li>November <span class="quanlity">3</span></li>
+                    </ul>
+
+                    <!-- Places -->
+                    <div class="row places-list">
+                        <div class="col col-fourth s-col-full mt-16">
+                            <img src="../imgs/Kngu6.jpg" alt="NDK" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Bé Khải 21 tủi</h3>
+                                <p class="place-time">11 Nov 2001</p>
+                                <p class="place-desc">Học thì ít. Ngu thì nhiều</p>
+                                <button class="btn s-full-width js-buy-ticket ">Cho không</button>
+                            </div>
+                        </div>
+
+                        <div class="col col-fourth s-col-full mt-16">
+                            <img src="../imgs/mb2.jpg" alt="NNM" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Nguyễn Nhật Minh</h3>
+                                <p class="place-time">29 Nov 2001</p>
+                                <p class="place-desc">Slogan: Bố mày ổn !</p>
+                                <button class="btn s-full-width js-buy-ticket ">Buy Tickets</button>
+                            </div>
+                        </div>
+
+                        <div class="col col-fourth s-col-full mt-16">
+                            <img src="../imgs/TCD.jpg" alt="TCD" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Trần Công Đại</h3>
+                                <p class="place-time">22 Sep 2001</p>
+                                <p class="place-desc">Trai đẹp trong nhóm</p>
+                                <button class="btn s-full-width js-buy-ticket ">Buy Tickets</button>
+                            </div>
+                        </div>
+
+                        <div class="col col-fourth s-col-full mt-16">
+                            <img src="../imgs/LVH.jpg" alt="LVH" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Lương Văn Hà</h3>
+                                <p class="place-time">18 July 2001</p>
+                                <p class="place-desc">Slogan: Đừng có "dê" tao</p>
+                                <button class="btn s-full-width js-buy-ticket ">Buy Tickets</button>
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Begin: Contact Section -->
+            <div id="contact" class="content-section">
+                <h2 class="section-heading">Contact</h2>
+                <p class="section-sub-heading">Fan? Drop a note!</p>
+
+                <div class="row contact-content">
+                    <div class="col col-half s-col-full contact-info">
+                        <p><i class="ti-location-pin"></i>Chicago, US</p>
+                        <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+                        <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                    </div>
+
+                    <div class="col col-half s-col-full contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half s-col-full">
+                                    <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                                </div>
+
+                                <div class="col col-half s-col-full s-mt-8">
+                                    <input type="text" name="" placeholder="Email" required id="" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row mt-8">
+                                <div class="col col-full ">
+                                    <input type="text" name="" placeholder="Message" required id=""
+                                        class="form-control">
+                                </div>
+                            </div>
+                            <input class="contact-submit-btn btn mt-16 pull-right s-full-width" type="submit"
+                                value="SEND">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <!--End: Contact Section -->
+
+            <!-- Map section -->
+            <div class="map-section">
+                <img src="./assets/img/map.jpg" alt="Map">
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <div class="socials-list">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="">w3.css</a></p>
+        </div>
+    </div>
+
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+
+            <div class="modal-header">
+                <i class="modal-heading-icon ti-bag"></i>
+                Tickets
+            </div>
+
+            <div class="modal-body">
+                <label for="modal-quanlity" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input id="modal-quanlity" type="text" class="modal-input" placeholder="How many?">
+
+                <label for="modal-email" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send To
+                </label>
+                <input id="modal-email" type="text" class="modal-input" placeholder="Enter email...">
+
+
+                <button id="btn-buy-ticket">
+                    Pay
+                    <i class="ti-check"></i>
+                </button>
+            </div>
+
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="#">help?</a></p>
+            </footer>
+        </div>
+
+    </div>
+
+    <!-- Javascript -->
+    <script>
+        // đưa 3 cái nút vào biến buyBtns
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const modal = document.querySelector('.js-modal')
+        const modalClose = document.querySelector('.js-modal-close')
+        const modalContainer = document.querySelector('.js-modal-container')
+
+        function showBuyTickets() {
+            modal.classList.add('open')
+        }
+
+        function hideBuyTickets() {
+            modal.classList.remove('open')
+        }
+
+        // chạy 3 lần vì có 3 cái nút
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showBuyTickets)
+        }
+
+        modalClose.addEventListener('click', hideBuyTickets)
+
+        modal.addEventListener('click', hideBuyTickets)
+
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+
+    </script>
+
+    <!-- JavaScript Mobile -->
+    <script>
+        var header = document.getElementById('header')
+        var mobileMenu = document.getElementById('mobile-menu')
+        var headerHeight = header.clientHeight;
+
+        mobileMenu.onclick = function () {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                // xét lại css chiều cao cho thanh menu
+                header.style.height = 'auto'
+            }
+            else {
+                header.style.height = null
+            }
+        }
+
+        // Tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]') //lấy tất cả thẻ nó link là #
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i]
+
+            menuItem.onclick = function (event) {
+                // nếu có anh chị em liền kề và anh chị em liền kề đó có class subnav
+                // tìm ra thẻ cấp 2 MORE
+                var isParentMenu = this.nextElementSibling && menuItem.nextElementSibling.classList('subnav');
+                if (isParentMenu) {
+                    event.preventDefault();
+                }
+                else {
+                    // nếu ko phải parentMenu thì ẩn
+                    header.style.height = null;
+                }
+            }
+        }
+    </script>
+
+        <script src="./assets/K.js"></script>
+
+</body>
+
+</html>
