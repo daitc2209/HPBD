@@ -67,19 +67,19 @@ const app = {
         {
             name: 'Cíu vãn kịp không',
             author: 'Vương Anh Tú',
-            image: '../imgs/Kngu6.jpg',
+            image: '../imgs/mb2.jpg',
             path: './assets/music/cvkk.mp3'
         },
         {
             name: 'Toxic',
             author: 'BoyWithUke',
-            image: '../imgs/Kngu6.jpg',
+            image: '../imgs/Kngu5.jpg',
             path: './assets/music/toxic.mp3'
         },
         {
             name: 'Unstoppable',
             author: 'Sia',
-            image: '../imgs/Kngu6.jpg',
+            image: '../imgs/mb1.jpg',
             path: './assets/music/unstoppable.mp3'
         },
         // {
@@ -363,23 +363,3 @@ const app = {
 }
 
 app.start()
-
-
-let slideIndex = 1;
-let slideId = $('mySlides1')
-showSlides(1, 0);
-
-function plusSlides(n, no) {
-  showSlides(slideIndex += n, no);
-}
-
-function showSlides(n, no) {
-  let i;
-  let x = document.getElementsByClassName(slideId);
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
