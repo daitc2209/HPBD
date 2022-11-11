@@ -28,6 +28,12 @@ const app = {
     config: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY)) || {},  //chuyển từ json sang js
     songs: [
         {
+            name: 'Happy Birthday 2 thằng chó !!!!!',
+            author: 'Phan Đình Tùng',
+            image: './imgs/TCD.jpg',
+            path: './assets/music/hb.mp3'
+        },
+        {
             name: 'Thuyền Quyên',
             author: 'Diệu Kiên',
             image: './assets/img/thuyenquyen.jpg',
@@ -44,12 +50,6 @@ const app = {
             author: 'Ariana Grande',
             image: './assets/img/everyday.jpg',
             path: './assets/music/everyday.mp3'
-        },
-        {
-            name: 'Happy Birthday 2 thằng chó !!!!!',
-            author: 'Phan Đình Tùng',
-            image: './imgs/TCD.jpg',
-            path: './assets/music/hb.mp3'
         },
         {
             name: 'Em sẽ hối hận',
@@ -73,7 +73,7 @@ const app = {
         {
             name: 'Toxic',
             author: 'BoyWithUke',
-            image: '../imgs/Kngu5.jpg',
+            image: '../imgs/m.png',
             path: './assets/music/toxic.mp3'
         },
         {
